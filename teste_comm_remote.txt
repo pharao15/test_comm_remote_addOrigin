@@ -97,3 +97,38 @@ nothing to commit, working tree clean
 
 fgrah@DESKTOP-MA9EEKP MINGW64 ~/OneDrive/Documentos/DIGITAL HOUSE/test_comm_remote_addOrigin (master)
 $
+E ai tudo certo.. modifiquei de novo o arquivo e testei o commit e o push... tudo ok, veja nas linhas abaixo >
+fgrah@DESKTOP-MA9EEKP MINGW64 ~/OneDrive/Documentos/DIGITAL HOUSE/test_comm_remote_addOrigin (master)
+$ git add teste_comm_remote.txt
+
+fgrah@DESKTOP-MA9EEKP MINGW64 ~/OneDrive/Documentos/DIGITAL HOUSE/test_comm_remote_addOrigin (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   teste_comm_remote.txt
+
+
+fgrah@DESKTOP-MA9EEKP MINGW64 ~/OneDrive/Documentos/DIGITAL HOUSE/test_comm_remote_addOrigin (master)
+$ git commit -m "arquivo modificado"
+[master b049293] arquivo modificado
+ 1 file changed, 93 insertions(+), 1 deletion(-)
+
+fgrah@DESKTOP-MA9EEKP MINGW64 ~/OneDrive/Documentos/DIGITAL HOUSE/test_comm_remote_addOrigin (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+fgrah@DESKTOP-MA9EEKP MINGW64 ~/OneDrive/Documentos/DIGITAL HOUSE/test_comm_remote_addOrigin (master)
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.25 KiB | 426.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/pharao15/test_comm_remote_addOrigin.git
+   9465c52..b049293  master -> master
+
+fgrah@DESKTOP-MA9EEKP MINGW64 ~/OneDrive/Documentos/DIGITAL HOUSE/test_comm_remote_addOrigin (master)
+$
