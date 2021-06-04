@@ -1,0 +1,7 @@
+ou dar a sequencia :
+ git init / git remote add https://github.com/pharao15/test_comm_remote_addOrigin.git / git status /git pull origin main 
+ git status / git add <este.arquivo> / git status / git commit -m "arquivo adcionado" 
+ git push origin main / git status / 
+
+ E depois modifico este arquivo, listando abaixo desta linha,
+ as linhas de comando que executei no terminal GitBash do VSCode. >
