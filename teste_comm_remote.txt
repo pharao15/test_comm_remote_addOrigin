@@ -5,3 +5,95 @@ ou dar a sequencia :
 
  E depois modifico este arquivo, listando abaixo desta linha,
  as linhas de comando que executei no terminal GitBash do VSCode. >
+
+ fgrah@DESKTOP-MA9EEKP MINGW64 ~/OneDrive/Documentos/DIGITAL HOUSE
+$ cd test_comm_remote_addOrigin
+
+fgrah@DESKTOP-MA9EEKP MINGW64 ~/OneDrive/Documentos/DIGITAL HOUSE/test_comm_remote_addOrigin
+$ git init
+Initialized empty Git repository in C:/Users/fgrah/OneDrive/Documentos/DIGITAL HOUSE/test_comm_remote_addOrigin/.git/
+
+fgrah@DESKTOP-MA9EEKP MINGW64 ~/OneDrive/Documentos/DIGITAL HOUSE/test_comm_remote_addOrigin (master)
+$ git remote add origin https://github.com/pharao15/test_comm_remote_addOrigin.git
+
+fgrah@DESKTOP-MA9EEKP MINGW64 ~/OneDrive/Documentos/DIGITAL HOUSE/test_comm_remote_addOrigin (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        teste_comm_remote.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+fgrah@DESKTOP-MA9EEKP MINGW64 ~/OneDrive/Documentos/DIGITAL HOUSE/test_comm_remote_addOrigin (master)
+$ git pull origin main
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), 1.22 KiB | 2.00 KiB/s, done.
+From https://github.com/pharao15/test_comm_remote_addOrigin
+ * branch            main       -> FETCH_HEAD
+ * [new branch]      main       -> origin/main
+
+fgrah@DESKTOP-MA9EEKP MINGW64 ~/OneDrive/Documentos/DIGITAL HOUSE/test_comm_remote_addOrigin (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        teste_comm_remote.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+fgrah@DESKTOP-MA9EEKP MINGW64 ~/OneDrive/Documentos/DIGITAL HOUSE/test_comm_remote_addOrigin (master)
+$ git add teste_comm_remote.txt
+
+fgrah@DESKTOP-MA9EEKP MINGW64 ~/OneDrive/Documentos/DIGITAL HOUSE/test_comm_remote_addOrigin (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   teste_comm_remote.txt
+
+
+fgrah@DESKTOP-MA9EEKP MINGW64 ~/OneDrive/Documentos/DIGITAL HOUSE/test_comm_remote_addOrigin (master)
+$ git commit -m "arquivo adicionado"
+[master 9465c52] arquivo adicionado
+ 1 file changed, 7 insertions(+)
+ create mode 100644 teste_comm_remote.txt
+
+fgrah@DESKTOP-MA9EEKP MINGW64 ~/OneDrive/Documentos/DIGITAL HOUSE/test_comm_remote_addOrigin (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+fgrah@DESKTOP-MA9EEKP MINGW64 ~/OneDrive/Documentos/DIGITAL HOUSE/test_comm_remote_addOrigin (master)
+$ git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/pharao15/test_comm_remote_addOrigin.git'
+
+fgrah@DESKTOP-MA9EEKP MINGW64 ~/OneDrive/Documentos/DIGITAL HOUSE/test_comm_remote_addOrigin (master)
+$ git push origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 521 bytes | 173.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/pharao15/test_comm_remote_addOrigin/pull/new/master
+remote:
+To https://github.com/pharao15/test_comm_remote_addOrigin.git
+ * [new branch]      master -> master
+
+fgrah@DESKTOP-MA9EEKP MINGW64 ~/OneDrive/Documentos/DIGITAL HOUSE/test_comm_remote_addOrigin (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+fgrah@DESKTOP-MA9EEKP MINGW64 ~/OneDrive/Documentos/DIGITAL HOUSE/test_comm_remote_addOrigin (master)
+$
